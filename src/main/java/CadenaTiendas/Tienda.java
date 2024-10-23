@@ -17,6 +17,9 @@ public class Tienda {
 	public Vector<Producto> _unnamed_Producto_ = new Vector<Producto>();
 	public Vector<Compra> _unnamed_Compra_ = new Vector<Compra>();
 
+	public Tienda(String tiendaA, String s, String s1) {
+	}
+
 	public String getNombre() {
 		return this._nombre;
 	}

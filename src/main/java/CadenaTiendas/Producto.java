@@ -13,12 +13,15 @@ public class Producto {
 	public Tienda _unnamed_Tienda_;
 	public Vector<Compra> _unnamed_Compra_ = new Vector<Compra>();
 
+	public Producto(String p001, String laptop, double v) {
+	}
+
 	public String getIdProducto() {
 		return this._idProducto;
 	}
 
-	public void setIdProducto(String aIdProducto) {
-		this._idProducto = aIdProducto;
+	public void setIdProducto(String IdProducto) {
+		this._idProducto = IdProducto;
 	}
 
 	public String getDescripcion() {

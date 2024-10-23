@@ -1,41 +1,44 @@
 package CadenaTiendas;
 
-import java.util.List;
-
 public class Cliente {
-	private String _nombre;
-	private String _idCliente;
-	public Compra _unnamed_Compra_;
+	private String nombre;
+	private String numeroCliente;
+
+	public Cliente(String nombre, String numeroCliente) {
+		this.nombre = nombre;
+		this.numeroCliente = numeroCliente;
+	}
 
 	public String getNombre() {
-		return this._nombre;
+		return nombre;
 	}
 
-	public void setNombre(String aNombre) {
-		this._nombre = aNombre;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
-	public String getIdCliente() {
-		return this._idCliente;
+	public String getNumeroCliente() {
+		return numeroCliente;
 	}
 
-	public void setIdCliente(String aIdCliente) {
-		this._idCliente = aIdCliente;
+	public void setNumeroCliente(String numeroCliente) {
+		this.numeroCliente = numeroCliente;
 	}
 
-	public boolean registrarCliente(String aNombre, String aIdCliente) {
-		throw new UnsupportedOperationException();
+	public boolean modificarCliente(String numeroCliente, Cliente nuevosDatos) {
+		if (this.numeroCliente.equals(numeroCliente)) {
+			this.nombre = nuevosDatos.getNombre();
+			return true;
+		}
+		return false;
 	}
 
-	public boolean modificarCliente(String aIdCliente, Cliente aNuevosDatosCliente) {
-		throw new UnsupportedOperationException();
-	}
-
-	public boolean eliminarCliente(String aIdCliente) {
-		throw new UnsupportedOperationException();
-	}
-
-	public List<Cliente> consultarClientes() {
-		throw new UnsupportedOperationException();
+	public boolean eliminarCliente(String numeroCliente) {
+		if (this.numeroCliente.equals(numeroCliente)) {
+			this.nombre = null;
+			this.numeroCliente = null;
+			return true;
+		}
+		return false;
 	}
 }

@@ -4,31 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d61be4a-eb61-41d2-81f7-a0f7a002e18c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Ciudad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Compra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Region.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Territorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Tienda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="6d61be4a-eb61-41d2-81f7-a0f7a002e18c" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CiudadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ClienteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CompraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/EmpleadoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RegionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Ciudad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Ciudad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Compra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Compra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Region.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Tienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CadenaTiendas/Tienda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "VicenteContrerasUfro"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/VicenteContrerasUfro/CadenaTiendas.git",
+    "accountId": "286c295b-2f7e-4362-9f0d-0a1636ae1b42"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -40,10 +65,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CiudadTest.executor": "Run",
+    "JUnit.ClienteTest.executor": "Run",
+    "JUnit.CompraTest.executor": "Run",
+    "JUnit.CompraTest.testAgregarProducto.executor": "Run",
+    "JUnit.EmpleadoTest.executor": "Run",
+    "JUnit.RegionTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/vamppycatt/IdeaProjects/CadenaTiendas/src/main/java/CadenaTiendas",
     "last_opened_file_path": "C:/Users/vamppycatt/IdeaProjects/CadenaTiendas/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,6 +93,93 @@
       <recent name="C:\Users\vamppycatt\IdeaProjects\CadenaTiendas\src\main\java" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.CiudadTest">
+    <configuration name="CiudadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CadenaTiendas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CadenaTiendas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CadenaTiendas" />
+      <option name="MAIN_CLASS_NAME" value="CadenaTiendas.CiudadTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CadenaTiendas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CadenaTiendas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CadenaTiendas" />
+      <option name="MAIN_CLASS_NAME" value="CadenaTiendas.ClienteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CadenaTiendas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CadenaTiendas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CadenaTiendas" />
+      <option name="MAIN_CLASS_NAME" value="CadenaTiendas.CompraTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompraTest.testAgregarProducto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CadenaTiendas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CadenaTiendas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CadenaTiendas" />
+      <option name="MAIN_CLASS_NAME" value="CadenaTiendas.CompraTest" />
+      <option name="METHOD_NAME" value="testAgregarProducto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmpleadoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CadenaTiendas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CadenaTiendas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CadenaTiendas" />
+      <option name="MAIN_CLASS_NAME" value="CadenaTiendas.EmpleadoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CiudadTest" />
+        <item itemvalue="JUnit.CompraTest" />
+        <item itemvalue="JUnit.CompraTest.testAgregarProducto" />
+        <item itemvalue="JUnit.ClienteTest" />
+        <item itemvalue="JUnit.EmpleadoTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -77,11 +196,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729643911633</updated>
-      <workItem from="1729643912682" duration="736000" />
+      <workItem from="1729643912682" duration="3017000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <option name="closed" value="true" />
+      <created>1729644704340</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729644704340</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CiudadTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

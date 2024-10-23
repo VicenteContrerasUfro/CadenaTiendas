@@ -1,37 +1,48 @@
 package CadenaTiendas;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
-import CadenaTiendas.Tienda;
 
 public class Ciudad {
 	private String _nombre;
 	private String _codigoPostal;
 	private List<Tienda> _tiendas;
-	public Region _unnamed_Region_;
-	public Vector<Tienda> _unnamed_Tienda_ = new Vector<Tienda>();
 
-	public String getNombre() {
-		return this._nombre;
+	public Ciudad(String nombre, String codigoPostal) {
+		this._nombre = nombre;
+		this._codigoPostal = codigoPostal;
+		this._tiendas = new ArrayList<>();
 	}
 
-	public void setNombre(String aNombre) {
-		this._nombre = aNombre;
+	public String getNombre() {
+		return _nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this._nombre = nombre;
 	}
 
 	public String getCodigoPostal() {
-		return this._codigoPostal;
+		return _codigoPostal;
 	}
 
-	public void setCodigoPostal(String aCodigoPostal) {
-		this._codigoPostal = aCodigoPostal;
+	public void setCodigoPostal(String codigoPostal) {
+		this._codigoPostal = codigoPostal;
 	}
 
 	public List<Tienda> getTiendas() {
-		throw new UnsupportedOperationException();
+		return _tiendas;
 	}
 
-	public void setTiendas(List<Tienda> aTiendas) {
-		throw new UnsupportedOperationException();
+	public void setTiendas(List<Tienda> tiendas) {
+		this._tiendas = tiendas;
+	}
+
+	public void agregarTienda(Tienda tienda) {
+		_tiendas.add(tienda);
+	}
+
+	public boolean eliminarTienda(Tienda tienda) {
+		return _tiendas.remove(tienda);
 	}
 }

@@ -1,50 +1,55 @@
 package CadenaTiendas;
 
-import java.util.List;
-
 public class Empleado {
-	private String _nombre;
-	private String _idEmpleado;
-	private String _cargo;
-	public Tienda _unnamed_Tienda_;
+	private String nombre;
+	private String id;
+	private String cargo;
+
+	public Empleado(String nombre, String id, String cargo) {
+		this.nombre = nombre;
+		this.id = id;
+		this.cargo = cargo;
+	}
 
 	public String getNombre() {
-		return this._nombre;
+		return nombre;
 	}
 
-	public void setNombre(String aNombre) {
-		this._nombre = aNombre;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
-	public String getIdEmpleado() {
-		return this._idEmpleado;
+	public String getId() {
+		return id;
 	}
 
-	public void setIdEmpleado(String aIdEmpleado) {
-		this._idEmpleado = aIdEmpleado;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getCargo() {
-		return this._cargo;
+		return cargo;
 	}
 
-	public void setCargo(String aCargo) {
-		this._cargo = aCargo;
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
 	}
 
-	public boolean agregarEmpleado(String aNombre, String aIdEmpleado, String aCargo) {
-		throw new UnsupportedOperationException();
+	public boolean modificarEmpleado(String id, Empleado nuevosDatos) {
+		if (this.id.equals(id)) {
+			this.nombre = nuevosDatos.getNombre();
+			this.cargo = nuevosDatos.getCargo();
+			return true;
+		}
+		return false;
 	}
 
-	public boolean modificarEmpleado(String aIdEmpleado, Empleado aNuevosDatosEmpleado) {
-		throw new UnsupportedOperationException();
-	}
-
-	public boolean eliminarEmpleado(Empleado aEmpleado) {
-		throw new UnsupportedOperationException();
-	}
-
-	public List<Empleado> consultarEmpleados() {
-		throw new UnsupportedOperationException();
+	public boolean eliminarEmpleado(String id) {
+		if (this.id.equals(id)) {
+			this.nombre = null;
+			this.cargo = null;
+			return true;
+		}
+		return false;
 	}
 }

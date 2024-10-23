@@ -1,65 +1,64 @@
 package CadenaTiendas;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Vector;
-import CadenaTiendas.Cliente;
-import CadenaTiendas.Producto;
 
 public class Compra {
-	private String _idCompra;
-	private Date _fecha;
-	private double _total;
-	private String _formaPago;
-	public Tienda _unnamed_Tienda_;
-	public Vector<Cliente> _unnamed_Cliente_ = new Vector<Cliente>();
-	public Vector<Producto> _unnamed_Producto_ = new Vector<Producto>();
+	private String numeroCompra;
+	private Date fecha;
+	private double total;
+	private String formaPago;
+	private List<Producto> productos;
 
-	public String getIdCompra() {
-		return this._idCompra;
+	public Compra(String numeroCompra, Date fecha, String formaPago) {
+		this.numeroCompra = numeroCompra;
+		this.fecha = fecha;
+		this.formaPago = formaPago;
+		this.total = 0; // Inicializa el total en 0
+		this.productos = new ArrayList<>();
 	}
 
-	public void setIdCompra(String aIdCompra) {
-		this._idCompra = aIdCompra;
+	public String getNumeroCompra() {
+		return numeroCompra;
 	}
 
 	public Date getFecha() {
-		return this._fecha;
-	}
-
-	public void setFecha(Date aFecha) {
-		this._fecha = aFecha;
+		return fecha;
 	}
 
 	public double getTotal() {
-		return this._total;
-	}
-
-	public void setTotal(double aTotal) {
-		this._total = aTotal;
+		return total;
 	}
 
 	public String getFormaPago() {
-		return this._formaPago;
+		return formaPago;
 	}
 
-	public void setFormaPago(String aFormaPago) {
-		this._formaPago = aFormaPago;
+	public void agregarProducto(Producto producto, int cantidad) {
+		for (int i = 0; i < cantidad; i++) {
+			productos.add(producto); // Agrega el producto múltiples veces según la cantidad
+		}
+		this.total += producto.getPrecio() * cantidad; // Actualiza el total
 	}
 
-	public boolean registrarCompra(String aIdCompra, Date aFecha, double aTotal, String aFormaPago) {
-		throw new UnsupportedOperationException();
+	public List<Producto> getProductos() {
+		return productos;
 	}
 
-	public boolean agregarProductos(Object aIdCompra, List<Producto> aProductos) {
-		throw new UnsupportedOperationException();
+	public boolean eliminarCompra(String numeroCompra) {
+		if (this.numeroCompra.equals(numeroCompra)) {
+			this.numeroCompra = null;
+			this.fecha = null;
+			this.total = 0;
+			this.formaPago = null;
+			this.productos.clear();
+			return true;
+		}
+		return false;
+	}
+	public void registrarCompra(Producto producto, int cantidad) {
+		agregarProducto(producto, cantidad);
 	}
 
-	public boolean actualizarInventario(List<Producto> aProductos, Tienda aTienda) {
-		throw new UnsupportedOperationException();
-	}
-
-	public List<Compra> consultarCompra() {
-		throw new UnsupportedOperationException();
-	}
 }
